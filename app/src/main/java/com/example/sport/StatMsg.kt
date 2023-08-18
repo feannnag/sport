@@ -25,14 +25,14 @@ data class StatMsg(val context: Context, val tvStatus: TextView, val btStart: Bu
     fun notConnection(){
       //  tvStatus.text = context.getString(R.string.status_cannotConnect)
         tvStatus.setTextColor(Color.RED)
-        btStart.isEnabled = false
+        //btStart.isEnabled = false
         Toast.makeText(context, IS_NOT_CONNECT, Toast.LENGTH_LONG).show()
     }
 
     fun lostConnection(){
        // tvStatus.text = context.getString(R.string.status_connectionLost)
         tvStatus.setTextColor(Color.RED)
-        btStart.isEnabled = false
+        //btStart.isEnabled = false
         Toast.makeText(context, LOST, Toast.LENGTH_LONG).show()
     }
 }
