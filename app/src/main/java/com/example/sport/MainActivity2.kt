@@ -64,6 +64,8 @@ class MainActivity2 : AppCompatActivity(), ReceiveThread.ListenerData {
 
     }
 
+
+
     override fun onReceive(message: String) {
         runOnUiThread {
             with(statusConnect) {

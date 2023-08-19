@@ -35,7 +35,6 @@ class ConnectThread(private val device: BluetoothDevice, val listener: ReceiveTh
             listener.onReceive( "Can not connect to device")
             closeConnection()
         } catch (se: SecurityException){
-
         }
     }
 
